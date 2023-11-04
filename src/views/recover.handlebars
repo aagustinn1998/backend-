@@ -1,0 +1,29 @@
+<div>
+  <h1></h1>
+
+  <div>
+    <form onsubmit="handleOnSubmit(); return false;">
+      <div style="width: 100%" class="mt-3">
+        <label for="password"></label>
+        <input
+          class="form-control"
+          type="password"
+          name="new_password"
+          id="password"
+          placeholder="Your new password"
+          
+        />
+      </div>
+      <div class="col-md-12 mt-3">
+        <label id="message" class="text-danger"></label>
+      </div>
+
+      <button class="btn btn-primary mt-2 mb-3" type="submit"></button>
+      <a href="/login"></a>
+    </form>
+  </div>
+  <input type="hidden" id="token" name="token" value="{{token}}" />
+
+</div>
+
+<script src="/js/recover.js"></script>
